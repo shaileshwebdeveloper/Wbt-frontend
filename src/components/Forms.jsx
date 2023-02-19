@@ -70,6 +70,7 @@ export const Forms = () => {
       >
         <Box>
           <Input
+                  required
             value={formstate.name}
             name="name"
             onChange={handleChange}
@@ -87,6 +88,7 @@ export const Forms = () => {
             placeholder="Last Name"
             mb={"1rem"}
             border="1px solid teal"
+            required
           />
         </Box>
 
@@ -98,11 +100,13 @@ export const Forms = () => {
             onChange={handleChange}
             mb={"1rem"}
             border="1px solid teal"
+            required
           />
         </Box>
 
         <Box>
           <Input
+               required
             type="Number"
             value={formstate.phone}
             name="phone"
@@ -115,6 +119,7 @@ export const Forms = () => {
 
         <Box>
           <Input
+               required
             type="email"
             value={formstate.email}
             name="email"
@@ -142,6 +147,7 @@ export const Forms = () => {
         <Flex justifyContent={"space-evenly"} gap="1rem">
           <Text as="b">Salary Type</Text>
           <Select
+               required
             type="text"
             value={formstate.salarytype}
             name="salarytype"
@@ -157,6 +163,7 @@ export const Forms = () => {
 
         <Box>
           <Input
+               required
             type="Number"
             value={formstate.salary}
             name="salary"
@@ -170,6 +177,7 @@ export const Forms = () => {
         <Flex justifyContent={"space-evenly"} gap="1rem">
           <Text as="b">Department</Text>
           <Select
+               required
             value={formstate.department}
             name="department"
             onChange={handleChange}
